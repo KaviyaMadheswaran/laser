@@ -100,6 +100,4 @@ for i in range(0,len(b)):
       if(i in g):
         g.pop(i)
     g=a
-for i in indi:
-  b.pop()
-print(len(b)+len(g))
+print((len(b)-len(indi))+len(g))
