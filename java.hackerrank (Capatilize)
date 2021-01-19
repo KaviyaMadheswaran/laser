@@ -1,0 +1,20 @@
+Constraints
+The string consists of alphanumeric characters and spaces.
+Note: in a word only the first character is capitalized. 
+Example 12abc when capitalized remains 12abc.
+Output FormatPrint the capitalized string, .
+SSample Input chris alan
+Sample Output Chris Alan
+# Complete the solve function below.
+def solve(s):
+    s1=s.split(" ")
+    ans=""
+    for i in s1:
+        ans+=i.capitalize()+" "
+    return ans
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    s = input()
+    result = solve(s)
+    fptr.write(result + '\n')
+    fptr.close()
