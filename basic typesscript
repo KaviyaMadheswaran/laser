@@ -1,0 +1,49 @@
+//oops in Type Script
+import { __values } from "tslib";
+
+class myclass
+{
+    j: number=7;
+    constructor(k: number)
+    {
+       this.j=k;
+    }
+    value(n: number)
+    {
+        console.log(this.j*n);
+    }
+}
+let ob=new myclass(10);
+ob.value(7);
+
+//function in Type Script
+function n(x, y) //or x : number, y: number
+{
+    console.log(x*y);
+}
+n(11,7);
+
+//class and sub class
+class Myclass
+{
+    j: number;
+    constructor(k: number)
+    {
+        this.j=k;
+    }
+}
+class Childclass extends Myclass
+{
+    l: number;
+    constructor(m: number, k: number)
+    {
+        super(k);
+        this.l=m;
+    }
+    value()
+    {
+        return this.l;
+    }
+}
+let ob=new Childclass(2,7);
+console.log(ob.value());
